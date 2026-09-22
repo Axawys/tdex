@@ -36,12 +36,22 @@ The catalog has two modes, switched with `Tab`:
 - Linux, Python 3.10+ (standard library only: `curses`, `json`, `subprocess`, `shutil`)
 - a UTF-8 terminal, at least 44×14
 
-## Running
+## Installation
+
+The recommended way to install is with [pipx](https://pipx.pypa.io/):
+
+```sh
+git clone https://github.com/Axawys/tdex.git && cd tdex && pipx install .
+```
+
+This installs the `tdex` command into `~/.local/bin`; then just run `tdex`.
+To update later: `git pull && pipx install --force .` (from the `tdex` directory).
+
+Running without installation, from the cloned directory:
 
 ```sh
 python3 -m tdex          # from the project directory
 ./tdex.sh                # same, from anywhere; keeps your working directory
-pipx install .           # install the `tdex` command
 ```
 
 Command-line options:
