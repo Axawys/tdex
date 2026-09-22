@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tdex"
+version = "1.0.0"
+description = "Интерактивный TUI-каталог консольных приложений и системных CLI-утилит для Linux"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-or-later" }
+classifiers = [
+    "Environment :: Console :: Curses",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+tdex = "tdex.__main__:main"
+
+[tool.setuptools]
+packages = ["tdex", "tdex.ui"]
+
+[tool.setuptools.package-data]
+tdex = ["data/*.json"]

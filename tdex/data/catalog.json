@@ -1,0 +1,3521 @@
+{
+  "version": 1,
+  "tools": [
+    {
+      "name": "btop",
+      "command": "btop",
+      "mode": "user",
+      "category": "Мониторинг",
+      "description": "Интерактивный мониторинг процессов и ресурсов системы: CPU, память, диски, сеть",
+      "tags": [
+        "monitor",
+        "process",
+        "cpu",
+        "memory",
+        "top",
+        "resources",
+        "system"
+      ],
+      "install": {
+        "arch": "sudo pacman -S btop",
+        "debian": "sudo apt install btop",
+        "fedora": "sudo dnf install btop"
+      }
+    },
+    {
+      "name": "htop",
+      "command": "htop",
+      "mode": "user",
+      "category": "Мониторинг",
+      "description": "Интерактивный просмотрщик процессов — улучшенная замена top",
+      "tags": [
+        "monitor",
+        "process",
+        "cpu",
+        "memory",
+        "top",
+        "kill"
+      ],
+      "install": {
+        "arch": "sudo pacman -S htop",
+        "debian": "sudo apt install htop",
+        "fedora": "sudo dnf install htop"
+      }
+    },
+    {
+      "name": "atop",
+      "command": "atop",
+      "mode": "user",
+      "category": "Мониторинг",
+      "description": "Мониторинг загрузки системы и процессов с журналированием истории",
+      "tags": [
+        "monitor",
+        "process",
+        "performance",
+        "history",
+        "disk"
+      ],
+      "install": {
+        "arch": "sudo pacman -S atop",
+        "debian": "sudo apt install atop",
+        "fedora": "sudo dnf install atop"
+      }
+    },
+    {
+      "name": "bottom",
+      "command": "btm",
+      "mode": "user",
+      "category": "Мониторинг",
+      "description": "Графический мониторинг процессов, CPU, памяти и сети в терминале",
+      "tags": [
+        "monitor",
+        "process",
+        "cpu",
+        "memory",
+        "graph",
+        "btm"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bottom",
+        "fedora": "sudo dnf install bottom",
+        "cargo": "cargo install bottom --locked"
+      }
+    },
+    {
+      "name": "nvtop",
+      "command": "nvtop",
+      "mode": "user",
+      "category": "Мониторинг",
+      "description": "Мониторинг загрузки видеокарт NVIDIA, AMD и Intel в стиле htop",
+      "tags": [
+        "monitor",
+        "gpu",
+        "nvidia",
+        "amd",
+        "intel",
+        "video"
+      ],
+      "install": {
+        "arch": "sudo pacman -S nvtop",
+        "debian": "sudo apt install nvtop",
+        "fedora": "sudo dnf install nvtop"
+      }
+    },
+    {
+      "name": "fastfetch",
+      "command": "fastfetch",
+      "mode": "user",
+      "category": "Информация о системе",
+      "description": "Быстрый вывод сведений о системе с логотипом дистрибутива",
+      "pause": true,
+      "tags": [
+        "info",
+        "system",
+        "neofetch",
+        "hardware",
+        "os",
+        "logo"
+      ],
+      "install": {
+        "arch": "sudo pacman -S fastfetch",
+        "debian": "sudo apt install fastfetch",
+        "fedora": "sudo dnf install fastfetch"
+      }
+    },
+    {
+      "name": "macchina",
+      "command": "macchina",
+      "mode": "user",
+      "category": "Информация о системе",
+      "description": "Минималистичный и быстрый вывод информации о системе",
+      "pause": true,
+      "tags": [
+        "info",
+        "system",
+        "neofetch",
+        "fetch"
+      ],
+      "install": {
+        "arch": "sudo pacman -S macchina",
+        "cargo": "cargo install macchina"
+      }
+    },
+    {
+      "name": "inxi",
+      "command": "inxi",
+      "mode": "user",
+      "category": "Информация о системе",
+      "description": "Подробный отчёт об оборудовании, драйверах и системе",
+      "args": [
+        "-Fxz"
+      ],
+      "pause": true,
+      "tags": [
+        "info",
+        "hardware",
+        "system",
+        "drivers",
+        "report"
+      ],
+      "install": {
+        "arch": "sudo pacman -S inxi",
+        "debian": "sudo apt install inxi",
+        "fedora": "sudo dnf install inxi"
+      }
+    },
+    {
+      "name": "hwinfo",
+      "command": "hwinfo",
+      "mode": "user",
+      "category": "Информация о системе",
+      "description": "Обнаружение и подробное описание оборудования",
+      "args": [
+        "--short"
+      ],
+      "pause": true,
+      "notes": "Для полной информации может потребоваться запуск от root.",
+      "tags": [
+        "info",
+        "hardware",
+        "devices",
+        "probe"
+      ],
+      "install": {
+        "arch": "sudo pacman -S hwinfo",
+        "debian": "sudo apt install hwinfo",
+        "fedora": "sudo dnf install hwinfo"
+      }
+    },
+    {
+      "name": "mc",
+      "command": "mc",
+      "mode": "user",
+      "category": "Файловые менеджеры",
+      "description": "Midnight Commander — классический двухпанельный файловый менеджер",
+      "tags": [
+        "file",
+        "manager",
+        "commander",
+        "norton",
+        "explorer"
+      ],
+      "install": {
+        "arch": "sudo pacman -S mc",
+        "debian": "sudo apt install mc",
+        "fedora": "sudo dnf install mc"
+      }
+    },
+    {
+      "name": "ranger",
+      "command": "ranger",
+      "mode": "user",
+      "category": "Файловые менеджеры",
+      "description": "Файловый менеджер с vi-клавишами и предпросмотром файлов",
+      "tags": [
+        "file",
+        "manager",
+        "vim",
+        "preview",
+        "explorer"
+      ],
+      "install": {
+        "arch": "sudo pacman -S ranger",
+        "debian": "sudo apt install ranger",
+        "fedora": "sudo dnf install ranger"
+      }
+    },
+    {
+      "name": "nnn",
+      "command": "nnn",
+      "mode": "user",
+      "category": "Файловые менеджеры",
+      "description": "Сверхбыстрый минималистичный файловый менеджер",
+      "tags": [
+        "file",
+        "manager",
+        "fast",
+        "minimal",
+        "explorer"
+      ],
+      "install": {
+        "arch": "sudo pacman -S nnn",
+        "debian": "sudo apt install nnn",
+        "fedora": "sudo dnf install nnn"
+      }
+    },
+    {
+      "name": "yazi",
+      "command": "yazi",
+      "mode": "user",
+      "category": "Файловые менеджеры",
+      "description": "Быстрый асинхронный файловый менеджер на Rust с предпросмотром изображений",
+      "tags": [
+        "file",
+        "manager",
+        "rust",
+        "preview",
+        "image",
+        "explorer"
+      ],
+      "install": {
+        "arch": "sudo pacman -S yazi",
+        "fedora": "sudo dnf copr enable lihaohong/yazi && sudo dnf install yazi",
+        "cargo": "cargo install --locked yazi-fm yazi-cli"
+      }
+    },
+    {
+      "name": "lf",
+      "command": "lf",
+      "mode": "user",
+      "category": "Файловые менеджеры",
+      "description": "Лёгкий файловый менеджер в стиле ranger, написанный на Go",
+      "tags": [
+        "file",
+        "manager",
+        "ranger",
+        "go",
+        "explorer"
+      ],
+      "install": {
+        "arch": "sudo pacman -S lf",
+        "debian": "sudo apt install lf",
+        "fedora": "sudo dnf install lf"
+      }
+    },
+    {
+      "name": "vim",
+      "command": "vim",
+      "mode": "user",
+      "category": "Текстовые редакторы",
+      "description": "Классический модальный текстовый редактор",
+      "tags": [
+        "editor",
+        "text",
+        "vi",
+        "modal",
+        "code"
+      ],
+      "install": {
+        "arch": "sudo pacman -S vim",
+        "debian": "sudo apt install vim",
+        "fedora": "sudo dnf install vim-enhanced"
+      }
+    },
+    {
+      "name": "neovim",
+      "command": "nvim",
+      "mode": "user",
+      "category": "Текстовые редакторы",
+      "description": "Современный форк Vim с поддержкой Lua, LSP и Tree-sitter",
+      "tags": [
+        "editor",
+        "text",
+        "vim",
+        "nvim",
+        "lsp",
+        "code"
+      ],
+      "install": {
+        "arch": "sudo pacman -S neovim",
+        "debian": "sudo apt install neovim",
+        "fedora": "sudo dnf install neovim"
+      }
+    },
+    {
+      "name": "nano",
+      "command": "nano",
+      "mode": "user",
+      "category": "Текстовые редакторы",
+      "description": "Простой и дружелюбный текстовый редактор для новичков",
+      "tags": [
+        "editor",
+        "text",
+        "simple"
+      ],
+      "install": {
+        "arch": "sudo pacman -S nano",
+        "debian": "sudo apt install nano",
+        "fedora": "sudo dnf install nano"
+      }
+    },
+    {
+      "name": "micro",
+      "command": "micro",
+      "mode": "user",
+      "category": "Текстовые редакторы",
+      "description": "Современный редактор с привычными сочетаниями клавиш (Ctrl+S, Ctrl+C, Ctrl+V)",
+      "tags": [
+        "editor",
+        "text",
+        "simple",
+        "modern",
+        "code"
+      ],
+      "install": {
+        "arch": "sudo pacman -S micro",
+        "debian": "sudo apt install micro",
+        "fedora": "sudo dnf install micro"
+      }
+    },
+    {
+      "name": "emacs",
+      "command": "emacs",
+      "mode": "user",
+      "category": "Текстовые редакторы",
+      "description": "GNU Emacs — расширяемый редактор, запускается в терминальном режиме",
+      "args": [
+        "-nw"
+      ],
+      "tags": [
+        "editor",
+        "text",
+        "lisp",
+        "org",
+        "code"
+      ],
+      "install": {
+        "arch": "sudo pacman -S emacs-nox",
+        "debian": "sudo apt install emacs-nox",
+        "fedora": "sudo dnf install emacs-nox"
+      }
+    },
+    {
+      "name": "fzf",
+      "command": "fzf",
+      "mode": "user",
+      "category": "Поиск и навигация",
+      "description": "Интерактивный нечёткий поиск по файлам и любым спискам",
+      "pause": true,
+      "notes": "Без входных данных ищет по файлам текущего каталога; выбранный путь печатается после выхода.",
+      "tags": [
+        "search",
+        "fuzzy",
+        "finder",
+        "find",
+        "filter"
+      ],
+      "install": {
+        "arch": "sudo pacman -S fzf",
+        "debian": "sudo apt install fzf",
+        "fedora": "sudo dnf install fzf"
+      }
+    },
+    {
+      "name": "broot",
+      "command": "broot",
+      "mode": "user",
+      "category": "Поиск и навигация",
+      "description": "Навигация по дереву каталогов с поиском на лету",
+      "tags": [
+        "search",
+        "navigation",
+        "tree",
+        "directory",
+        "find"
+      ],
+      "install": {
+        "arch": "sudo pacman -S broot",
+        "fedora": "sudo dnf install broot",
+        "cargo": "cargo install --locked broot"
+      }
+    },
+    {
+      "name": "zoxide",
+      "command": "zoxide",
+      "mode": "user",
+      "category": "Поиск и навигация",
+      "description": "Умная замена cd, запоминающая часто посещаемые каталоги",
+      "args": [
+        "query",
+        "--list",
+        "--score"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "notes": "Для навигации zoxide нужно подключить в оболочке: eval \"$(zoxide init bash)\".",
+      "tags": [
+        "navigation",
+        "cd",
+        "jump",
+        "directory",
+        "z"
+      ],
+      "install": {
+        "arch": "sudo pacman -S zoxide",
+        "debian": "sudo apt install zoxide",
+        "fedora": "sudo dnf install zoxide"
+      }
+    },
+    {
+      "name": "bat",
+      "command": "bat",
+      "mode": "user",
+      "category": "Работа с файлами",
+      "description": "Аналог cat с подсветкой синтаксиса, номерами строк и интеграцией с Git",
+      "aliases": [
+        "batcat"
+      ],
+      "args": [
+        "/etc/os-release"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "cat",
+        "view",
+        "syntax",
+        "highlight",
+        "pager",
+        "file"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bat",
+        "debian": "sudo apt install bat",
+        "fedora": "sudo dnf install bat"
+      }
+    },
+    {
+      "name": "eza",
+      "command": "eza",
+      "mode": "user",
+      "category": "Работа с файлами",
+      "description": "Современная замена ls: цвета, иконки, дерево и статус Git",
+      "args": [
+        "-la",
+        "--group-directories-first"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "ls",
+        "list",
+        "files",
+        "directory",
+        "exa"
+      ],
+      "install": {
+        "arch": "sudo pacman -S eza",
+        "debian": "sudo apt install eza",
+        "fedora": "sudo dnf install eza"
+      }
+    },
+    {
+      "name": "tree",
+      "command": "tree",
+      "mode": "user",
+      "category": "Работа с файлами",
+      "description": "Вывод структуры каталогов в виде дерева",
+      "args": [
+        "-L",
+        "2"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "directory",
+        "list",
+        "files",
+        "structure"
+      ],
+      "install": {
+        "arch": "sudo pacman -S tree",
+        "debian": "sudo apt install tree",
+        "fedora": "sudo dnf install tree"
+      }
+    },
+    {
+      "name": "dust",
+      "command": "dust",
+      "mode": "user",
+      "category": "Работа с файлами",
+      "description": "Наглядный анализ занятого места на диске — du на стероидах",
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "disk",
+        "usage",
+        "du",
+        "size",
+        "space"
+      ],
+      "install": {
+        "arch": "sudo pacman -S dust",
+        "debian": "sudo apt install du-dust",
+        "fedora": "sudo dnf install du-dust"
+      }
+    },
+    {
+      "name": "duf",
+      "command": "duf",
+      "mode": "user",
+      "category": "Работа с файлами",
+      "description": "Удобная таблица свободного места на дисках — замена df",
+      "pause": true,
+      "tags": [
+        "disk",
+        "free",
+        "df",
+        "space",
+        "mount"
+      ],
+      "install": {
+        "arch": "sudo pacman -S duf",
+        "debian": "sudo apt install duf",
+        "fedora": "sudo dnf install duf"
+      }
+    },
+    {
+      "name": "cmus",
+      "command": "cmus",
+      "mode": "user",
+      "category": "Музыка",
+      "description": "Быстрый и лёгкий консольный музыкальный плеер",
+      "tags": [
+        "music",
+        "audio",
+        "player",
+        "mp3",
+        "playlist"
+      ],
+      "install": {
+        "arch": "sudo pacman -S cmus",
+        "debian": "sudo apt install cmus",
+        "fedora": "sudo dnf install cmus"
+      }
+    },
+    {
+      "name": "moc",
+      "command": "mocp",
+      "mode": "user",
+      "category": "Музыка",
+      "description": "Music On Console — консольный аудиоплеер с файловым браузером",
+      "tags": [
+        "music",
+        "audio",
+        "player",
+        "mocp"
+      ],
+      "install": {
+        "arch": "sudo pacman -S moc",
+        "debian": "sudo apt install moc",
+        "fedora": "sudo dnf install moc  # из репозитория RPM Fusion"
+      }
+    },
+    {
+      "name": "musikcube",
+      "command": "musikcube",
+      "mode": "user",
+      "category": "Музыка",
+      "description": "Кроссплатформенный терминальный музыкальный плеер, библиотека и сервер",
+      "tags": [
+        "music",
+        "audio",
+        "player",
+        "library",
+        "server"
+      ],
+      "install": {
+        "aur": "yay -S musikcube",
+        "other": "Пакеты .deb/.rpm: https://github.com/clangen/musikcube/releases"
+      }
+    },
+    {
+      "name": "cava",
+      "command": "cava",
+      "mode": "user",
+      "category": "Музыка",
+      "description": "Аудиовизуализатор спектра прямо в терминале",
+      "tags": [
+        "music",
+        "audio",
+        "visualizer",
+        "spectrum",
+        "equalizer"
+      ],
+      "install": {
+        "arch": "sudo pacman -S cava",
+        "debian": "sudo apt install cava",
+        "fedora": "sudo dnf install cava"
+      }
+    },
+    {
+      "name": "cli-visualizer",
+      "command": "vis",
+      "mode": "user",
+      "category": "Музыка",
+      "description": "Визуализатор аудио для MPD, PulseAudio и ALSA",
+      "tags": [
+        "music",
+        "audio",
+        "visualizer",
+        "spectrum",
+        "vis"
+      ],
+      "install": {
+        "aur": "yay -S cli-visualizer",
+        "other": "Сборка из исходников: https://github.com/dpayne/cli-visualizer"
+      }
+    },
+    {
+      "name": "mpv",
+      "command": "mpv",
+      "mode": "user",
+      "category": "Видео и изображения",
+      "description": "Мощный медиаплеер; в терминале может выводить видео через --vo=tct",
+      "pause": true,
+      "prompt_args": true,
+      "notes": "Укажите файл или URL. Для вывода видео символами добавьте --vo=tct.",
+      "tags": [
+        "video",
+        "audio",
+        "player",
+        "media",
+        "movie"
+      ],
+      "install": {
+        "arch": "sudo pacman -S mpv",
+        "debian": "sudo apt install mpv",
+        "fedora": "sudo dnf install mpv"
+      }
+    },
+    {
+      "name": "viu",
+      "command": "viu",
+      "mode": "user",
+      "category": "Видео и изображения",
+      "description": "Просмотр изображений прямо в терминале",
+      "pause": true,
+      "prompt_args": true,
+      "notes": "Укажите путь к изображению.",
+      "tags": [
+        "image",
+        "picture",
+        "viewer",
+        "photo"
+      ],
+      "install": {
+        "arch": "sudo pacman -S viu",
+        "fedora": "sudo dnf install viu",
+        "cargo": "cargo install viu"
+      }
+    },
+    {
+      "name": "chafa",
+      "command": "chafa",
+      "mode": "user",
+      "category": "Видео и изображения",
+      "description": "Преобразование изображений и анимаций в символьную графику",
+      "pause": true,
+      "prompt_args": true,
+      "notes": "Укажите путь к изображению.",
+      "tags": [
+        "image",
+        "picture",
+        "viewer",
+        "ascii",
+        "art",
+        "gif"
+      ],
+      "install": {
+        "arch": "sudo pacman -S chafa",
+        "debian": "sudo apt install chafa",
+        "fedora": "sudo dnf install chafa"
+      }
+    },
+    {
+      "name": "ffmpeg",
+      "command": "ffmpeg",
+      "mode": "user",
+      "category": "Видео и изображения",
+      "description": "Конвертация, запись и обработка аудио и видео",
+      "args": [
+        "-version"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "video",
+        "audio",
+        "convert",
+        "encode",
+        "media"
+      ],
+      "install": {
+        "arch": "sudo pacman -S ffmpeg",
+        "debian": "sudo apt install ffmpeg",
+        "fedora": "sudo dnf install ffmpeg-free"
+      }
+    },
+    {
+      "name": "lazygit",
+      "command": "lazygit",
+      "mode": "user",
+      "category": "Git",
+      "description": "Простой и удобный TUI-интерфейс для Git",
+      "tags": [
+        "git",
+        "vcs",
+        "commit",
+        "branch",
+        "version"
+      ],
+      "install": {
+        "arch": "sudo pacman -S lazygit",
+        "debian": "sudo apt install lazygit",
+        "fedora": "sudo dnf copr enable atim/lazygit && sudo dnf install lazygit"
+      }
+    },
+    {
+      "name": "tig",
+      "command": "tig",
+      "mode": "user",
+      "category": "Git",
+      "description": "Текстовый интерфейс для просмотра истории и изменений Git",
+      "tags": [
+        "git",
+        "vcs",
+        "log",
+        "history",
+        "version"
+      ],
+      "install": {
+        "arch": "sudo pacman -S tig",
+        "debian": "sudo apt install tig",
+        "fedora": "sudo dnf install tig"
+      }
+    },
+    {
+      "name": "gitui",
+      "command": "gitui",
+      "mode": "user",
+      "category": "Git",
+      "description": "Быстрый TUI-клиент Git, написанный на Rust",
+      "tags": [
+        "git",
+        "vcs",
+        "commit",
+        "rust",
+        "version"
+      ],
+      "install": {
+        "arch": "sudo pacman -S gitui",
+        "fedora": "sudo dnf install gitui",
+        "cargo": "cargo install gitui --locked"
+      }
+    },
+    {
+      "name": "gh",
+      "command": "gh",
+      "mode": "user",
+      "category": "Git",
+      "description": "Официальный CLI GitHub: pull request'ы, issues, релизы, Actions",
+      "args": [
+        "status"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "notes": "Перед работой выполните: gh auth login.",
+      "tags": [
+        "git",
+        "github",
+        "pr",
+        "issue",
+        "cli"
+      ],
+      "install": {
+        "arch": "sudo pacman -S github-cli",
+        "debian": "sudo apt install gh",
+        "fedora": "sudo dnf install gh"
+      }
+    },
+    {
+      "name": "lazydocker",
+      "command": "lazydocker",
+      "mode": "user",
+      "category": "Docker и контейнеры",
+      "description": "TUI для управления контейнерами, образами и Docker Compose",
+      "tags": [
+        "docker",
+        "container",
+        "compose",
+        "image"
+      ],
+      "install": {
+        "aur": "yay -S lazydocker",
+        "go": "go install github.com/jesseduffield/lazydocker@latest"
+      }
+    },
+    {
+      "name": "docker",
+      "command": "docker",
+      "mode": "user",
+      "category": "Docker и контейнеры",
+      "description": "Клиент Docker: запуск и управление контейнерами",
+      "args": [
+        "ps"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "docker",
+        "container",
+        "image",
+        "compose"
+      ],
+      "install": {
+        "arch": "sudo pacman -S docker",
+        "debian": "sudo apt install docker.io",
+        "fedora": "sudo dnf install moby-engine"
+      }
+    },
+    {
+      "name": "podman",
+      "command": "podman",
+      "mode": "user",
+      "category": "Docker и контейнеры",
+      "description": "Контейнеры без демона и root, совместим с командами Docker",
+      "args": [
+        "ps"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "container",
+        "docker",
+        "rootless",
+        "image",
+        "pod"
+      ],
+      "install": {
+        "arch": "sudo pacman -S podman",
+        "debian": "sudo apt install podman",
+        "fedora": "sudo dnf install podman"
+      }
+    },
+    {
+      "name": "dive",
+      "command": "dive",
+      "mode": "user",
+      "category": "Docker и контейнеры",
+      "description": "Исследование слоёв Docker-образа и поиск лишнего места",
+      "pause": true,
+      "prompt_args": true,
+      "notes": "Укажите имя образа, например: alpine:latest.",
+      "tags": [
+        "docker",
+        "image",
+        "layers",
+        "container",
+        "size"
+      ],
+      "install": {
+        "arch": "sudo pacman -S dive",
+        "go": "go install github.com/wagoodman/dive@latest",
+        "other": "Пакеты .deb/.rpm: https://github.com/wagoodman/dive/releases"
+      }
+    },
+    {
+      "name": "nmap",
+      "command": "nmap",
+      "mode": "user",
+      "category": "Сеть",
+      "description": "Сканер сети и открытых портов",
+      "args": [
+        "-F",
+        "localhost"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "notes": "Сканируйте только свои сети и узлы, на которые у вас есть разрешение.",
+      "tags": [
+        "network",
+        "scan",
+        "port",
+        "security",
+        "host"
+      ],
+      "install": {
+        "arch": "sudo pacman -S nmap",
+        "debian": "sudo apt install nmap",
+        "fedora": "sudo dnf install nmap"
+      }
+    },
+    {
+      "name": "bandwhich",
+      "command": "bandwhich",
+      "mode": "user",
+      "category": "Сеть",
+      "description": "Использование сети в реальном времени по процессам и соединениям",
+      "pause": true,
+      "notes": "Требует прав root: запустите вручную через sudo bandwhich.",
+      "tags": [
+        "network",
+        "bandwidth",
+        "traffic",
+        "monitor",
+        "process"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bandwhich",
+        "fedora": "sudo dnf install bandwhich",
+        "cargo": "cargo install bandwhich"
+      }
+    },
+    {
+      "name": "iftop",
+      "command": "iftop",
+      "mode": "user",
+      "category": "Сеть",
+      "description": "Мониторинг сетевого трафика по соединениям",
+      "pause": true,
+      "notes": "Требует прав root: запустите вручную через sudo iftop.",
+      "tags": [
+        "network",
+        "bandwidth",
+        "traffic",
+        "monitor",
+        "top"
+      ],
+      "install": {
+        "arch": "sudo pacman -S iftop",
+        "debian": "sudo apt install iftop",
+        "fedora": "sudo dnf install iftop"
+      }
+    },
+    {
+      "name": "nload",
+      "command": "nload",
+      "mode": "user",
+      "category": "Сеть",
+      "description": "Графики входящего и исходящего трафика по интерфейсам",
+      "tags": [
+        "network",
+        "bandwidth",
+        "traffic",
+        "monitor",
+        "graph"
+      ],
+      "install": {
+        "arch": "sudo pacman -S nload",
+        "debian": "sudo apt install nload",
+        "fedora": "sudo dnf install nload"
+      }
+    },
+    {
+      "name": "bmon",
+      "command": "bmon",
+      "mode": "user",
+      "category": "Сеть",
+      "description": "Мониторинг пропускной способности сетевых интерфейсов",
+      "tags": [
+        "network",
+        "bandwidth",
+        "traffic",
+        "monitor",
+        "interface"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bmon",
+        "debian": "sudo apt install bmon",
+        "fedora": "sudo dnf install bmon"
+      }
+    },
+    {
+      "name": "lynx",
+      "command": "lynx",
+      "mode": "user",
+      "category": "Терминальные браузеры",
+      "description": "Классический текстовый веб-браузер",
+      "args": [
+        "https://lite.duckduckgo.com/lite/"
+      ],
+      "prompt_args": true,
+      "tags": [
+        "browser",
+        "web",
+        "www",
+        "http",
+        "internet"
+      ],
+      "install": {
+        "arch": "sudo pacman -S lynx",
+        "debian": "sudo apt install lynx",
+        "fedora": "sudo dnf install lynx"
+      }
+    },
+    {
+      "name": "w3m",
+      "command": "w3m",
+      "mode": "user",
+      "category": "Терминальные браузеры",
+      "description": "Текстовый браузер с поддержкой таблиц и фреймов",
+      "args": [
+        "https://lite.duckduckgo.com/lite/"
+      ],
+      "prompt_args": true,
+      "tags": [
+        "browser",
+        "web",
+        "www",
+        "http",
+        "internet"
+      ],
+      "install": {
+        "arch": "sudo pacman -S w3m",
+        "debian": "sudo apt install w3m",
+        "fedora": "sudo dnf install w3m"
+      }
+    },
+    {
+      "name": "links",
+      "command": "links",
+      "mode": "user",
+      "category": "Терминальные браузеры",
+      "description": "Быстрый текстовый браузер с меню и поддержкой мыши",
+      "args": [
+        "https://lite.duckduckgo.com/lite/"
+      ],
+      "prompt_args": true,
+      "tags": [
+        "browser",
+        "web",
+        "www",
+        "http",
+        "internet"
+      ],
+      "install": {
+        "arch": "sudo pacman -S links",
+        "debian": "sudo apt install links",
+        "fedora": "sudo dnf install links"
+      }
+    },
+    {
+      "name": "browsh",
+      "command": "browsh",
+      "mode": "user",
+      "category": "Терминальные браузеры",
+      "description": "Современный текстовый браузер, использующий Firefox для отрисовки страниц",
+      "notes": "Требуется установленный Firefox.",
+      "tags": [
+        "browser",
+        "web",
+        "www",
+        "firefox",
+        "internet"
+      ],
+      "install": {
+        "aur": "yay -S browsh-bin",
+        "other": "Пакеты .deb/.rpm: https://github.com/browsh-org/browsh/releases"
+      }
+    },
+    {
+      "name": "sqlite3",
+      "command": "sqlite3",
+      "mode": "user",
+      "category": "Базы данных",
+      "description": "Консольный клиент встраиваемой базы данных SQLite",
+      "prompt_args": true,
+      "notes": "Укажите файл базы данных или оставьте пустым для базы в памяти.",
+      "tags": [
+        "database",
+        "db",
+        "sql",
+        "sqlite"
+      ],
+      "install": {
+        "arch": "sudo pacman -S sqlite",
+        "debian": "sudo apt install sqlite3",
+        "fedora": "sudo dnf install sqlite"
+      }
+    },
+    {
+      "name": "psql",
+      "command": "psql",
+      "mode": "user",
+      "category": "Базы данных",
+      "description": "Интерактивный клиент PostgreSQL",
+      "pause": true,
+      "prompt_args": true,
+      "notes": "Параметры подключения: -h хост -U пользователь имя_базы.",
+      "tags": [
+        "database",
+        "db",
+        "sql",
+        "postgres",
+        "postgresql"
+      ],
+      "install": {
+        "arch": "sudo pacman -S postgresql",
+        "debian": "sudo apt install postgresql-client",
+        "fedora": "sudo dnf install postgresql"
+      }
+    },
+    {
+      "name": "mycli",
+      "command": "mycli",
+      "mode": "user",
+      "category": "Базы данных",
+      "description": "Клиент MySQL/MariaDB с автодополнением и подсветкой синтаксиса",
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "database",
+        "db",
+        "sql",
+        "mysql",
+        "mariadb"
+      ],
+      "install": {
+        "arch": "yay -S mycli  # AUR",
+        "debian": "sudo apt install mycli",
+        "fedora": "sudo dnf install mycli",
+        "pip": "pipx install mycli"
+      }
+    },
+    {
+      "name": "litecli",
+      "command": "litecli",
+      "mode": "user",
+      "category": "Базы данных",
+      "description": "Клиент SQLite с автодополнением и подсветкой синтаксиса",
+      "prompt_args": true,
+      "notes": "Укажите файл базы данных.",
+      "tags": [
+        "database",
+        "db",
+        "sql",
+        "sqlite"
+      ],
+      "install": {
+        "arch": "yay -S litecli  # AUR",
+        "debian": "sudo apt install litecli",
+        "fedora": "sudo dnf install litecli",
+        "pip": "pipx install litecli"
+      }
+    },
+    {
+      "name": "lnav",
+      "command": "lnav",
+      "mode": "user",
+      "category": "Логи",
+      "description": "Навигатор по лог-файлам с подсветкой, фильтрами и SQL-запросами",
+      "prompt_args": true,
+      "notes": "Без аргументов открывает системные журналы.",
+      "tags": [
+        "log",
+        "logs",
+        "viewer",
+        "syslog",
+        "journal"
+      ],
+      "install": {
+        "arch": "sudo pacman -S lnav",
+        "debian": "sudo apt install lnav",
+        "fedora": "sudo dnf install lnav"
+      }
+    },
+    {
+      "name": "multitail",
+      "command": "multitail",
+      "mode": "user",
+      "category": "Логи",
+      "description": "Просмотр нескольких лог-файлов одновременно в разделённых окнах",
+      "pause": true,
+      "prompt_args": true,
+      "notes": "Укажите один или несколько файлов журналов.",
+      "tags": [
+        "log",
+        "logs",
+        "tail",
+        "viewer",
+        "follow"
+      ],
+      "install": {
+        "arch": "yay -S multitail  # AUR",
+        "debian": "sudo apt install multitail",
+        "fedora": "sudo dnf install multitail"
+      }
+    },
+    {
+      "name": "tmux",
+      "command": "tmux",
+      "mode": "user",
+      "category": "Терминальные мультиплексоры",
+      "description": "Терминальный мультиплексор: окна, панели и отключаемые сессии",
+      "tags": [
+        "multiplexer",
+        "terminal",
+        "session",
+        "window",
+        "pane"
+      ],
+      "install": {
+        "arch": "sudo pacman -S tmux",
+        "debian": "sudo apt install tmux",
+        "fedora": "sudo dnf install tmux"
+      }
+    },
+    {
+      "name": "screen",
+      "command": "screen",
+      "mode": "user",
+      "category": "Терминальные мультиплексоры",
+      "description": "GNU Screen — классический терминальный мультиплексор",
+      "tags": [
+        "multiplexer",
+        "terminal",
+        "session",
+        "window"
+      ],
+      "install": {
+        "arch": "sudo pacman -S screen",
+        "debian": "sudo apt install screen",
+        "fedora": "sudo dnf install screen"
+      }
+    },
+    {
+      "name": "zellij",
+      "command": "zellij",
+      "mode": "user",
+      "category": "Терминальные мультиплексоры",
+      "description": "Современный мультиплексор с подсказками клавиш и раскладками",
+      "tags": [
+        "multiplexer",
+        "terminal",
+        "session",
+        "pane",
+        "layout"
+      ],
+      "install": {
+        "arch": "sudo pacman -S zellij",
+        "cargo": "cargo install --locked zellij"
+      }
+    },
+    {
+      "name": "taskwarrior",
+      "command": "task",
+      "mode": "user",
+      "category": "Органайзеры",
+      "description": "Управление списком задач из командной строки",
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "todo",
+        "task",
+        "tasks",
+        "organizer",
+        "gtd"
+      ],
+      "install": {
+        "arch": "sudo pacman -S task",
+        "debian": "sudo apt install taskwarrior",
+        "fedora": "sudo dnf install task"
+      }
+    },
+    {
+      "name": "calcurse",
+      "command": "calcurse",
+      "mode": "user",
+      "category": "Органайзеры",
+      "description": "Календарь и планировщик задач с текстовым интерфейсом",
+      "tags": [
+        "calendar",
+        "todo",
+        "organizer",
+        "schedule",
+        "planner"
+      ],
+      "install": {
+        "arch": "sudo pacman -S calcurse",
+        "debian": "sudo apt install calcurse",
+        "fedora": "sudo dnf install calcurse"
+      }
+    },
+    {
+      "name": "khal",
+      "command": "khal",
+      "mode": "user",
+      "category": "Органайзеры",
+      "description": "Консольный календарь с поддержкой CalDAV (через vdirsyncer)",
+      "args": [
+        "calendar"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "notes": "Интерактивный режим: аргумент interactive (или команда ikhal).",
+      "tags": [
+        "calendar",
+        "caldav",
+        "organizer",
+        "schedule"
+      ],
+      "install": {
+        "arch": "sudo pacman -S khal",
+        "debian": "sudo apt install khal",
+        "fedora": "sudo dnf install khal"
+      }
+    },
+    {
+      "name": "pass",
+      "command": "pass",
+      "mode": "user",
+      "category": "Пароли и шифрование",
+      "description": "Стандартный менеджер паролей Unix на основе GPG",
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "password",
+        "secret",
+        "gpg",
+        "manager",
+        "security"
+      ],
+      "install": {
+        "arch": "sudo pacman -S pass",
+        "debian": "sudo apt install pass",
+        "fedora": "sudo dnf install pass"
+      }
+    },
+    {
+      "name": "gopass",
+      "command": "gopass",
+      "mode": "user",
+      "category": "Пароли и шифрование",
+      "description": "Командный менеджер паролей для команд, совместимый с pass",
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "password",
+        "secret",
+        "gpg",
+        "manager",
+        "team"
+      ],
+      "install": {
+        "arch": "sudo pacman -S gopass",
+        "debian": "sudo apt install gopass",
+        "fedora": "sudo dnf install gopass"
+      }
+    },
+    {
+      "name": "age",
+      "command": "age",
+      "mode": "user",
+      "category": "Пароли и шифрование",
+      "description": "Простое и современное шифрование файлов",
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "encryption",
+        "crypto",
+        "encrypt",
+        "file",
+        "security"
+      ],
+      "install": {
+        "arch": "sudo pacman -S age",
+        "debian": "sudo apt install age",
+        "fedora": "sudo dnf install age"
+      }
+    },
+    {
+      "name": "gpg",
+      "command": "gpg",
+      "mode": "user",
+      "category": "Пароли и шифрование",
+      "description": "GnuPG — шифрование, цифровые подписи и управление ключами",
+      "args": [
+        "--list-keys"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "encryption",
+        "crypto",
+        "pgp",
+        "gpg",
+        "sign",
+        "keys"
+      ],
+      "install": {
+        "arch": "sudo pacman -S gnupg",
+        "debian": "sudo apt install gnupg",
+        "fedora": "sudo dnf install gnupg2"
+      }
+    },
+    {
+      "name": "nethack",
+      "command": "nethack",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Легендарная roguelike-игра с исследованием подземелий",
+      "tags": [
+        "game",
+        "roguelike",
+        "dungeon",
+        "rpg"
+      ],
+      "install": {
+        "arch": "sudo pacman -S nethack",
+        "debian": "sudo apt install nethack-console",
+        "fedora": "sudo dnf install nethack"
+      }
+    },
+    {
+      "name": "moon-buggy",
+      "command": "moon-buggy",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Езда по лунной поверхности с прыжками через кратеры",
+      "tags": [
+        "game",
+        "arcade",
+        "moon"
+      ],
+      "install": {
+        "arch": "yay -S moon-buggy  # AUR",
+        "debian": "sudo apt install moon-buggy",
+        "fedora": "sudo dnf install moon-buggy"
+      }
+    },
+    {
+      "name": "bastet",
+      "command": "bastet",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "«Злой» тетрис, который подбирает самую неудобную фигуру",
+      "tags": [
+        "game",
+        "tetris",
+        "puzzle"
+      ],
+      "install": {
+        "arch": "yay -S bastet  # AUR",
+        "debian": "sudo apt install bastet",
+        "fedora": "sudo dnf install bastet"
+      }
+    },
+    {
+      "name": "nsnake",
+      "command": "nsnake",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Классическая «Змейка» в терминале",
+      "tags": [
+        "game",
+        "snake",
+        "arcade"
+      ],
+      "install": {
+        "arch": "yay -S nsnake  # AUR",
+        "debian": "sudo apt install nsnake",
+        "fedora": "sudo dnf install nsnake"
+      }
+    },
+    {
+      "name": "nudoku",
+      "command": "nudoku",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Судоку в терминале",
+      "tags": [
+        "game",
+        "sudoku",
+        "puzzle"
+      ],
+      "install": {
+        "arch": "yay -S nudoku  # AUR",
+        "debian": "sudo apt install nudoku",
+        "fedora": "sudo dnf install nudoku"
+      }
+    },
+    {
+      "name": "2048",
+      "command": "2048",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Головоломка 2048: складывайте плитки с одинаковыми числами",
+      "tags": [
+        "game",
+        "puzzle",
+        "2048"
+      ],
+      "install": {
+        "aur": "yay -S 2048-cli",
+        "other": "Сборка из исходников: https://github.com/tiehuis/2048-cli"
+      }
+    },
+    {
+      "name": "cmatrix",
+      "command": "cmatrix",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Эффект «цифрового дождя» из фильма «Матрица»",
+      "notes": "Выход — клавиша q.",
+      "tags": [
+        "fun",
+        "matrix",
+        "screensaver",
+        "ascii",
+        "animation"
+      ],
+      "install": {
+        "arch": "sudo pacman -S cmatrix",
+        "debian": "sudo apt install cmatrix",
+        "fedora": "sudo dnf install cmatrix"
+      }
+    },
+    {
+      "name": "sl",
+      "command": "sl",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Паровоз, проезжающий по экрану, если ошибиться при наборе ls",
+      "tags": [
+        "fun",
+        "train",
+        "ascii",
+        "animation",
+        "joke"
+      ],
+      "install": {
+        "arch": "sudo pacman -S sl",
+        "debian": "sudo apt install sl",
+        "fedora": "sudo dnf install sl"
+      }
+    },
+    {
+      "name": "cowsay",
+      "command": "cowsay",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Корова, произносящая заданный текст",
+      "args": [
+        "Привет из tdex!"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "fun",
+        "cow",
+        "ascii",
+        "text",
+        "say"
+      ],
+      "install": {
+        "arch": "sudo pacman -S cowsay",
+        "debian": "sudo apt install cowsay",
+        "fedora": "sudo dnf install cowsay"
+      }
+    },
+    {
+      "name": "fortune",
+      "command": "fortune",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Случайная цитата, афоризм или шутка",
+      "pause": true,
+      "tags": [
+        "fun",
+        "quote",
+        "joke",
+        "random",
+        "text"
+      ],
+      "install": {
+        "arch": "sudo pacman -S fortune-mod",
+        "debian": "sudo apt install fortune-mod",
+        "fedora": "sudo dnf install fortune-mod"
+      }
+    },
+    {
+      "name": "lolcat",
+      "command": "lolcat",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Раскрашивание текста в цвета радуги",
+      "args": [
+        "/etc/os-release"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "notes": "Укажите файл, который нужно раскрасить.",
+      "tags": [
+        "fun",
+        "rainbow",
+        "color",
+        "text"
+      ],
+      "install": {
+        "arch": "sudo pacman -S lolcat",
+        "debian": "sudo apt install lolcat",
+        "fedora": "sudo dnf install lolcat"
+      }
+    },
+    {
+      "name": "toilet",
+      "command": "toilet",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Крупные надписи из символов с цветными эффектами",
+      "args": [
+        "tdex"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "fun",
+        "banner",
+        "ascii",
+        "figlet",
+        "text",
+        "art"
+      ],
+      "install": {
+        "arch": "sudo pacman -S toilet",
+        "debian": "sudo apt install toilet",
+        "fedora": "sudo dnf install toilet"
+      }
+    },
+    {
+      "name": "ls",
+      "command": "ls",
+      "mode": "system",
+      "category": "Файловая система",
+      "description": "Список файлов и каталогов",
+      "args": [
+        "-lah",
+        "--color=auto"
+      ],
+      "tags": [
+        "list",
+        "files",
+        "directory",
+        "dir"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "cd",
+      "command": "cd",
+      "mode": "system",
+      "category": "Файловая система",
+      "description": "Смена текущего каталога",
+      "builtin": true,
+      "notes": "Встроенная команда оболочки: работает только внутри shell, поэтому Enter показывает справку help.",
+      "tags": [
+        "directory",
+        "change",
+        "navigation"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bash",
+        "debian": "sudo apt install bash",
+        "fedora": "sudo dnf install bash"
+      }
+    },
+    {
+      "name": "pwd",
+      "command": "pwd",
+      "mode": "system",
+      "category": "Файловая система",
+      "description": "Вывод полного пути текущего каталога",
+      "prompt_args": false,
+      "tags": [
+        "directory",
+        "path",
+        "current"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "cp",
+      "command": "cp",
+      "mode": "system",
+      "category": "Файловая система",
+      "description": "Копирование файлов и каталогов",
+      "tags": [
+        "copy",
+        "files"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "mv",
+      "command": "mv",
+      "mode": "system",
+      "category": "Файловая система",
+      "description": "Перемещение и переименование файлов",
+      "tags": [
+        "move",
+        "rename",
+        "files"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "rm",
+      "command": "rm",
+      "mode": "system",
+      "category": "Файловая система",
+      "description": "Удаление файлов и каталогов",
+      "notes": "Удаление необратимо. Для каталогов нужен ключ -r; -i спрашивает подтверждение.",
+      "tags": [
+        "remove",
+        "delete",
+        "files"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "mkdir",
+      "command": "mkdir",
+      "mode": "system",
+      "category": "Файловая система",
+      "description": "Создание каталогов",
+      "tags": [
+        "directory",
+        "create",
+        "make"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "rmdir",
+      "command": "rmdir",
+      "mode": "system",
+      "category": "Файловая система",
+      "description": "Удаление пустых каталогов",
+      "tags": [
+        "directory",
+        "remove",
+        "delete"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "touch",
+      "command": "touch",
+      "mode": "system",
+      "category": "Файловая система",
+      "description": "Создание пустых файлов и изменение времени модификации",
+      "tags": [
+        "file",
+        "create",
+        "timestamp"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "ln",
+      "command": "ln",
+      "mode": "system",
+      "category": "Файловая система",
+      "description": "Создание жёстких и символических ссылок",
+      "tags": [
+        "link",
+        "symlink",
+        "files"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "cat",
+      "command": "cat",
+      "mode": "system",
+      "category": "Просмотр файлов",
+      "description": "Вывод и объединение содержимого файлов",
+      "args": [
+        "/etc/os-release"
+      ],
+      "tags": [
+        "view",
+        "print",
+        "file",
+        "concatenate"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "less",
+      "command": "less",
+      "mode": "system",
+      "category": "Просмотр файлов",
+      "description": "Постраничный просмотр файлов с прокруткой и поиском",
+      "args": [
+        "/etc/os-release"
+      ],
+      "pause": false,
+      "tags": [
+        "pager",
+        "view",
+        "file",
+        "scroll"
+      ],
+      "install": {
+        "arch": "sudo pacman -S less",
+        "debian": "sudo apt install less",
+        "fedora": "sudo dnf install less"
+      }
+    },
+    {
+      "name": "more",
+      "command": "more",
+      "mode": "system",
+      "category": "Просмотр файлов",
+      "description": "Простой постраничный просмотр файлов",
+      "args": [
+        "/etc/os-release"
+      ],
+      "tags": [
+        "pager",
+        "view",
+        "file"
+      ],
+      "install": {
+        "arch": "sudo pacman -S util-linux",
+        "debian": "sudo apt install util-linux",
+        "fedora": "sudo dnf install util-linux"
+      }
+    },
+    {
+      "name": "head",
+      "command": "head",
+      "mode": "system",
+      "category": "Просмотр файлов",
+      "description": "Вывод первых строк файла",
+      "args": [
+        "-n",
+        "5",
+        "/etc/passwd"
+      ],
+      "tags": [
+        "view",
+        "file",
+        "first",
+        "lines"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "tail",
+      "command": "tail",
+      "mode": "system",
+      "category": "Просмотр файлов",
+      "description": "Вывод последних строк файла; -f — следить за дописыванием",
+      "args": [
+        "-n",
+        "5",
+        "/etc/passwd"
+      ],
+      "tags": [
+        "view",
+        "file",
+        "last",
+        "lines",
+        "follow",
+        "log"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "file",
+      "command": "file",
+      "mode": "system",
+      "category": "Просмотр файлов",
+      "description": "Определение типа файла по содержимому",
+      "args": [
+        "/bin/sh"
+      ],
+      "tags": [
+        "type",
+        "detect",
+        "mime",
+        "file"
+      ],
+      "install": {
+        "arch": "sudo pacman -S file",
+        "debian": "sudo apt install file",
+        "fedora": "sudo dnf install file"
+      }
+    },
+    {
+      "name": "grep",
+      "command": "grep",
+      "mode": "system",
+      "category": "Обработка текста",
+      "description": "Поиск строк по заданному шаблону",
+      "args": [
+        "-n",
+        "--color=auto",
+        "root",
+        "/etc/passwd"
+      ],
+      "tags": [
+        "search",
+        "pattern",
+        "regex",
+        "text",
+        "filter"
+      ],
+      "install": {
+        "arch": "sudo pacman -S grep",
+        "debian": "sudo apt install grep",
+        "fedora": "sudo dnf install grep"
+      }
+    },
+    {
+      "name": "sed",
+      "command": "sed",
+      "mode": "system",
+      "category": "Обработка текста",
+      "description": "Потоковый редактор: замена и преобразование текста",
+      "args": [
+        "-n",
+        "1,3p",
+        "/etc/os-release"
+      ],
+      "tags": [
+        "replace",
+        "stream",
+        "edit",
+        "regex",
+        "text"
+      ],
+      "install": {
+        "arch": "sudo pacman -S sed",
+        "debian": "sudo apt install sed",
+        "fedora": "sudo dnf install sed"
+      }
+    },
+    {
+      "name": "awk",
+      "command": "awk",
+      "mode": "system",
+      "category": "Обработка текста",
+      "description": "Язык обработки текста по полям и шаблонам",
+      "args": [
+        "-F:",
+        "{ print $1 }",
+        "/etc/passwd"
+      ],
+      "tags": [
+        "text",
+        "fields",
+        "columns",
+        "script",
+        "report"
+      ],
+      "install": {
+        "arch": "sudo pacman -S gawk",
+        "debian": "sudo apt install gawk",
+        "fedora": "sudo dnf install gawk"
+      }
+    },
+    {
+      "name": "cut",
+      "command": "cut",
+      "mode": "system",
+      "category": "Обработка текста",
+      "description": "Вырезание полей и столбцов из строк",
+      "args": [
+        "-d:",
+        "-f1,7",
+        "/etc/passwd"
+      ],
+      "tags": [
+        "text",
+        "fields",
+        "columns"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "tr",
+      "command": "tr",
+      "mode": "system",
+      "category": "Обработка текста",
+      "description": "Замена и удаление символов во входном потоке",
+      "args": [
+        "a-z",
+        "A-Z"
+      ],
+      "notes": "Читает стандартный ввод: введите текст, затем Ctrl+D.",
+      "tags": [
+        "text",
+        "translate",
+        "replace",
+        "characters"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "sort",
+      "command": "sort",
+      "mode": "system",
+      "category": "Обработка текста",
+      "description": "Сортировка строк",
+      "args": [
+        "/etc/shells"
+      ],
+      "tags": [
+        "text",
+        "sort",
+        "order",
+        "lines"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "uniq",
+      "command": "uniq",
+      "mode": "system",
+      "category": "Обработка текста",
+      "description": "Удаление или подсчёт повторяющихся соседних строк",
+      "args": [
+        "-c",
+        "/etc/shells"
+      ],
+      "tags": [
+        "text",
+        "duplicate",
+        "unique",
+        "count"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "wc",
+      "command": "wc",
+      "mode": "system",
+      "category": "Обработка текста",
+      "description": "Подсчёт строк, слов и байтов",
+      "args": [
+        "-l",
+        "/etc/passwd"
+      ],
+      "tags": [
+        "count",
+        "lines",
+        "words",
+        "bytes"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "paste",
+      "command": "paste",
+      "mode": "system",
+      "category": "Обработка текста",
+      "description": "Построчное объединение файлов",
+      "args": [
+        "-s",
+        "-d,",
+        "/etc/shells"
+      ],
+      "tags": [
+        "text",
+        "merge",
+        "join",
+        "columns"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "column",
+      "command": "column",
+      "mode": "system",
+      "category": "Обработка текста",
+      "description": "Форматирование текста в столбцы и таблицы",
+      "args": [
+        "-t",
+        "-s:",
+        "/etc/passwd"
+      ],
+      "tags": [
+        "text",
+        "table",
+        "columns",
+        "format"
+      ],
+      "install": {
+        "arch": "sudo pacman -S util-linux",
+        "debian": "sudo apt install bsdextrautils",
+        "fedora": "sudo dnf install util-linux"
+      }
+    },
+    {
+      "name": "find",
+      "command": "find",
+      "mode": "system",
+      "category": "Поиск",
+      "description": "Поиск файлов по имени, типу, размеру и времени",
+      "args": [
+        ".",
+        "-maxdepth",
+        "1",
+        "-type",
+        "f"
+      ],
+      "tags": [
+        "search",
+        "files",
+        "locate",
+        "directory"
+      ],
+      "install": {
+        "arch": "sudo pacman -S findutils",
+        "debian": "sudo apt install findutils",
+        "fedora": "sudo dnf install findutils"
+      }
+    },
+    {
+      "name": "locate",
+      "command": "locate",
+      "mode": "system",
+      "category": "Поиск",
+      "description": "Быстрый поиск файлов по заранее построенной базе",
+      "args": [
+        "bashrc"
+      ],
+      "notes": "Перед первым использованием обновите базу: sudo updatedb.",
+      "tags": [
+        "search",
+        "files",
+        "database",
+        "index"
+      ],
+      "install": {
+        "arch": "sudo pacman -S plocate",
+        "debian": "sudo apt install plocate",
+        "fedora": "sudo dnf install plocate"
+      }
+    },
+    {
+      "name": "xargs",
+      "command": "xargs",
+      "mode": "system",
+      "category": "Поиск",
+      "description": "Построение и запуск команд из стандартного ввода",
+      "args": [
+        "echo"
+      ],
+      "notes": "Читает стандартный ввод: введите значения, затем Ctrl+D.",
+      "tags": [
+        "arguments",
+        "pipe",
+        "batch",
+        "stdin"
+      ],
+      "install": {
+        "arch": "sudo pacman -S findutils",
+        "debian": "sudo apt install findutils",
+        "fedora": "sudo dnf install findutils"
+      }
+    },
+    {
+      "name": "which",
+      "command": "which",
+      "mode": "system",
+      "category": "Поиск",
+      "description": "Путь к исполняемому файлу команды",
+      "args": [
+        "bash"
+      ],
+      "tags": [
+        "path",
+        "command",
+        "locate"
+      ],
+      "install": {
+        "arch": "sudo pacman -S which",
+        "debian": "sudo apt install debianutils",
+        "fedora": "sudo dnf install which"
+      }
+    },
+    {
+      "name": "whereis",
+      "command": "whereis",
+      "mode": "system",
+      "category": "Поиск",
+      "description": "Поиск исполняемого файла, исходников и man-страниц команды",
+      "args": [
+        "bash"
+      ],
+      "tags": [
+        "path",
+        "command",
+        "man",
+        "locate"
+      ],
+      "install": {
+        "arch": "sudo pacman -S util-linux",
+        "debian": "sudo apt install util-linux",
+        "fedora": "sudo dnf install util-linux"
+      }
+    },
+    {
+      "name": "type",
+      "command": "type",
+      "mode": "system",
+      "category": "Поиск",
+      "description": "Как оболочка интерпретирует имя: алиас, функция, встроенная или внешняя команда",
+      "builtin": true,
+      "notes": "Встроенная команда оболочки: работает только внутри shell, поэтому Enter показывает справку help.",
+      "tags": [
+        "command",
+        "builtin",
+        "alias",
+        "path"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bash",
+        "debian": "sudo apt install bash",
+        "fedora": "sudo dnf install bash"
+      }
+    },
+    {
+      "name": "ps",
+      "command": "ps",
+      "mode": "system",
+      "category": "Процессы",
+      "description": "Снимок списка процессов",
+      "args": [
+        "aux",
+        "--sort=-%cpu"
+      ],
+      "tags": [
+        "process",
+        "list",
+        "pid",
+        "tasks"
+      ],
+      "install": {
+        "arch": "sudo pacman -S procps-ng",
+        "debian": "sudo apt install procps",
+        "fedora": "sudo dnf install procps-ng"
+      }
+    },
+    {
+      "name": "top",
+      "command": "top",
+      "mode": "system",
+      "category": "Процессы",
+      "description": "Мониторинг процессов в реальном времени",
+      "pause": false,
+      "prompt_args": false,
+      "tags": [
+        "process",
+        "monitor",
+        "cpu",
+        "memory"
+      ],
+      "install": {
+        "arch": "sudo pacman -S procps-ng",
+        "debian": "sudo apt install procps",
+        "fedora": "sudo dnf install procps-ng"
+      }
+    },
+    {
+      "name": "kill",
+      "command": "kill",
+      "mode": "system",
+      "category": "Процессы",
+      "description": "Отправка сигнала процессу по PID",
+      "args": [
+        "-l"
+      ],
+      "tags": [
+        "process",
+        "signal",
+        "terminate",
+        "pid"
+      ],
+      "install": {
+        "arch": "sudo pacman -S util-linux",
+        "debian": "sudo apt install util-linux",
+        "fedora": "sudo dnf install util-linux"
+      }
+    },
+    {
+      "name": "pkill",
+      "command": "pkill",
+      "mode": "system",
+      "category": "Процессы",
+      "description": "Отправка сигнала процессам по имени",
+      "tags": [
+        "process",
+        "signal",
+        "terminate",
+        "name"
+      ],
+      "install": {
+        "arch": "sudo pacman -S procps-ng",
+        "debian": "sudo apt install procps",
+        "fedora": "sudo dnf install procps-ng"
+      }
+    },
+    {
+      "name": "pgrep",
+      "command": "pgrep",
+      "mode": "system",
+      "category": "Процессы",
+      "description": "Поиск PID процессов по имени",
+      "args": [
+        "-a",
+        "bash"
+      ],
+      "tags": [
+        "process",
+        "search",
+        "pid",
+        "name"
+      ],
+      "install": {
+        "arch": "sudo pacman -S procps-ng",
+        "debian": "sudo apt install procps",
+        "fedora": "sudo dnf install procps-ng"
+      }
+    },
+    {
+      "name": "jobs",
+      "command": "jobs",
+      "mode": "system",
+      "category": "Процессы",
+      "description": "Список фоновых заданий текущей оболочки",
+      "builtin": true,
+      "notes": "Встроенная команда оболочки: работает только внутри shell, поэтому Enter показывает справку help.",
+      "tags": [
+        "job",
+        "background",
+        "process"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bash",
+        "debian": "sudo apt install bash",
+        "fedora": "sudo dnf install bash"
+      }
+    },
+    {
+      "name": "fg",
+      "command": "fg",
+      "mode": "system",
+      "category": "Процессы",
+      "description": "Перевод задания на передний план",
+      "builtin": true,
+      "notes": "Встроенная команда оболочки: работает только внутри shell, поэтому Enter показывает справку help.",
+      "tags": [
+        "job",
+        "foreground",
+        "process"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bash",
+        "debian": "sudo apt install bash",
+        "fedora": "sudo dnf install bash"
+      }
+    },
+    {
+      "name": "bg",
+      "command": "bg",
+      "mode": "system",
+      "category": "Процессы",
+      "description": "Продолжение приостановленного задания в фоне",
+      "builtin": true,
+      "notes": "Встроенная команда оболочки: работает только внутри shell, поэтому Enter показывает справку help.",
+      "tags": [
+        "job",
+        "background",
+        "process"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bash",
+        "debian": "sudo apt install bash",
+        "fedora": "sudo dnf install bash"
+      }
+    },
+    {
+      "name": "uname",
+      "command": "uname",
+      "mode": "system",
+      "category": "Система",
+      "description": "Сведения о ядре и архитектуре",
+      "args": [
+        "-a"
+      ],
+      "tags": [
+        "kernel",
+        "system",
+        "version",
+        "arch"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "hostname",
+      "command": "hostname",
+      "mode": "system",
+      "category": "Система",
+      "description": "Вывод и изменение имени хоста",
+      "prompt_args": false,
+      "tags": [
+        "host",
+        "name",
+        "system",
+        "network"
+      ],
+      "install": {
+        "arch": "sudo pacman -S inetutils",
+        "debian": "sudo apt install hostname",
+        "fedora": "sudo dnf install hostname"
+      }
+    },
+    {
+      "name": "uptime",
+      "command": "uptime",
+      "mode": "system",
+      "category": "Система",
+      "description": "Время работы системы и средняя загрузка",
+      "prompt_args": false,
+      "tags": [
+        "system",
+        "load",
+        "time",
+        "uptime"
+      ],
+      "install": {
+        "arch": "sudo pacman -S procps-ng",
+        "debian": "sudo apt install procps",
+        "fedora": "sudo dnf install procps-ng"
+      }
+    },
+    {
+      "name": "free",
+      "command": "free",
+      "mode": "system",
+      "category": "Система",
+      "description": "Использование оперативной памяти и swap",
+      "args": [
+        "-h"
+      ],
+      "tags": [
+        "memory",
+        "ram",
+        "swap"
+      ],
+      "install": {
+        "arch": "sudo pacman -S procps-ng",
+        "debian": "sudo apt install procps",
+        "fedora": "sudo dnf install procps-ng"
+      }
+    },
+    {
+      "name": "vmstat",
+      "command": "vmstat",
+      "mode": "system",
+      "category": "Система",
+      "description": "Статистика памяти, процессов, ввода-вывода и CPU",
+      "args": [
+        "1",
+        "5"
+      ],
+      "tags": [
+        "memory",
+        "cpu",
+        "io",
+        "statistics",
+        "performance"
+      ],
+      "install": {
+        "arch": "sudo pacman -S procps-ng",
+        "debian": "sudo apt install procps",
+        "fedora": "sudo dnf install procps-ng"
+      }
+    },
+    {
+      "name": "lscpu",
+      "command": "lscpu",
+      "mode": "system",
+      "category": "Система",
+      "description": "Сведения о процессоре",
+      "tags": [
+        "cpu",
+        "processor",
+        "hardware"
+      ],
+      "install": {
+        "arch": "sudo pacman -S util-linux",
+        "debian": "sudo apt install util-linux",
+        "fedora": "sudo dnf install util-linux"
+      }
+    },
+    {
+      "name": "lsusb",
+      "command": "lsusb",
+      "mode": "system",
+      "category": "Система",
+      "description": "Список USB-устройств",
+      "tags": [
+        "usb",
+        "devices",
+        "hardware"
+      ],
+      "install": {
+        "arch": "sudo pacman -S usbutils",
+        "debian": "sudo apt install usbutils",
+        "fedora": "sudo dnf install usbutils"
+      }
+    },
+    {
+      "name": "lspci",
+      "command": "lspci",
+      "mode": "system",
+      "category": "Система",
+      "description": "Список PCI-устройств",
+      "tags": [
+        "pci",
+        "devices",
+        "hardware",
+        "gpu"
+      ],
+      "install": {
+        "arch": "sudo pacman -S pciutils",
+        "debian": "sudo apt install pciutils",
+        "fedora": "sudo dnf install pciutils"
+      }
+    },
+    {
+      "name": "df",
+      "command": "df",
+      "mode": "system",
+      "category": "Диски",
+      "description": "Свободное место на файловых системах",
+      "args": [
+        "-h"
+      ],
+      "tags": [
+        "disk",
+        "free",
+        "space",
+        "filesystem"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "du",
+      "command": "du",
+      "mode": "system",
+      "category": "Диски",
+      "description": "Размер файлов и каталогов",
+      "args": [
+        "-sh",
+        "."
+      ],
+      "tags": [
+        "disk",
+        "usage",
+        "size",
+        "space"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "lsblk",
+      "command": "lsblk",
+      "mode": "system",
+      "category": "Диски",
+      "description": "Список блочных устройств и разделов",
+      "args": [
+        "-f"
+      ],
+      "tags": [
+        "disk",
+        "partition",
+        "block",
+        "device"
+      ],
+      "install": {
+        "arch": "sudo pacman -S util-linux",
+        "debian": "sudo apt install util-linux",
+        "fedora": "sudo dnf install util-linux"
+      }
+    },
+    {
+      "name": "blkid",
+      "command": "blkid",
+      "mode": "system",
+      "category": "Диски",
+      "description": "UUID, метки и типы файловых систем",
+      "notes": "Полные сведения доступны только root.",
+      "tags": [
+        "disk",
+        "uuid",
+        "label",
+        "filesystem"
+      ],
+      "install": {
+        "arch": "sudo pacman -S util-linux",
+        "debian": "sudo apt install util-linux",
+        "fedora": "sudo dnf install util-linux"
+      }
+    },
+    {
+      "name": "mount",
+      "command": "mount",
+      "mode": "system",
+      "category": "Диски",
+      "description": "Монтирование файловых систем; без аргументов — список смонтированных",
+      "args": [
+        "-l"
+      ],
+      "notes": "Монтирование требует прав root — выполните вручную через sudo.",
+      "tags": [
+        "disk",
+        "mount",
+        "filesystem"
+      ],
+      "install": {
+        "arch": "sudo pacman -S util-linux",
+        "debian": "sudo apt install util-linux",
+        "fedora": "sudo dnf install util-linux"
+      }
+    },
+    {
+      "name": "umount",
+      "command": "umount",
+      "mode": "system",
+      "category": "Диски",
+      "description": "Отмонтирование файловых систем",
+      "notes": "Требует прав root — выполните вручную через sudo.",
+      "tags": [
+        "disk",
+        "unmount",
+        "filesystem"
+      ],
+      "install": {
+        "arch": "sudo pacman -S util-linux",
+        "debian": "sudo apt install util-linux",
+        "fedora": "sudo dnf install util-linux"
+      }
+    },
+    {
+      "name": "chmod",
+      "command": "chmod",
+      "mode": "system",
+      "category": "Права доступа",
+      "description": "Изменение прав доступа к файлам",
+      "tags": [
+        "permissions",
+        "mode",
+        "access",
+        "rwx"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "chown",
+      "command": "chown",
+      "mode": "system",
+      "category": "Права доступа",
+      "description": "Смена владельца файлов",
+      "tags": [
+        "owner",
+        "permissions",
+        "user"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "chgrp",
+      "command": "chgrp",
+      "mode": "system",
+      "category": "Права доступа",
+      "description": "Смена группы файлов",
+      "tags": [
+        "group",
+        "permissions",
+        "owner"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "umask",
+      "command": "umask",
+      "mode": "system",
+      "category": "Права доступа",
+      "description": "Маска прав для создаваемых файлов",
+      "builtin": true,
+      "notes": "Встроенная команда оболочки: работает только внутри shell, поэтому Enter показывает справку help.",
+      "tags": [
+        "permissions",
+        "mask",
+        "default"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bash",
+        "debian": "sudo apt install bash",
+        "fedora": "sudo dnf install bash"
+      }
+    },
+    {
+      "name": "tar",
+      "command": "tar",
+      "mode": "system",
+      "category": "Архивы и сжатие",
+      "description": "Создание и распаковка архивов tar",
+      "notes": "Создать: -czf архив.tar.gz каталог; распаковать: -xf архив.tar.gz.",
+      "tags": [
+        "archive",
+        "extract",
+        "compress",
+        "backup"
+      ],
+      "install": {
+        "arch": "sudo pacman -S tar",
+        "debian": "sudo apt install tar",
+        "fedora": "sudo dnf install tar"
+      }
+    },
+    {
+      "name": "gzip",
+      "command": "gzip",
+      "mode": "system",
+      "category": "Архивы и сжатие",
+      "description": "Сжатие файлов в формат .gz",
+      "tags": [
+        "compress",
+        "archive",
+        "gz"
+      ],
+      "install": {
+        "arch": "sudo pacman -S gzip",
+        "debian": "sudo apt install gzip",
+        "fedora": "sudo dnf install gzip"
+      }
+    },
+    {
+      "name": "gunzip",
+      "command": "gunzip",
+      "mode": "system",
+      "category": "Архивы и сжатие",
+      "description": "Распаковка файлов .gz",
+      "tags": [
+        "decompress",
+        "extract",
+        "gz"
+      ],
+      "install": {
+        "arch": "sudo pacman -S gzip",
+        "debian": "sudo apt install gzip",
+        "fedora": "sudo dnf install gzip"
+      }
+    },
+    {
+      "name": "bzip2",
+      "command": "bzip2",
+      "mode": "system",
+      "category": "Архивы и сжатие",
+      "description": "Сжатие файлов в формат .bz2",
+      "tags": [
+        "compress",
+        "archive",
+        "bz2"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bzip2",
+        "debian": "sudo apt install bzip2",
+        "fedora": "sudo dnf install bzip2"
+      }
+    },
+    {
+      "name": "xz",
+      "command": "xz",
+      "mode": "system",
+      "category": "Архивы и сжатие",
+      "description": "Сильное сжатие в формат .xz",
+      "tags": [
+        "compress",
+        "archive",
+        "lzma"
+      ],
+      "install": {
+        "arch": "sudo pacman -S xz",
+        "debian": "sudo apt install xz-utils",
+        "fedora": "sudo dnf install xz"
+      }
+    },
+    {
+      "name": "zip",
+      "command": "zip",
+      "mode": "system",
+      "category": "Архивы и сжатие",
+      "description": "Создание ZIP-архивов",
+      "tags": [
+        "compress",
+        "archive",
+        "zip"
+      ],
+      "install": {
+        "arch": "sudo pacman -S zip",
+        "debian": "sudo apt install zip",
+        "fedora": "sudo dnf install zip"
+      }
+    },
+    {
+      "name": "unzip",
+      "command": "unzip",
+      "mode": "system",
+      "category": "Архивы и сжатие",
+      "description": "Распаковка ZIP-архивов",
+      "tags": [
+        "decompress",
+        "extract",
+        "zip"
+      ],
+      "install": {
+        "arch": "sudo pacman -S unzip",
+        "debian": "sudo apt install unzip",
+        "fedora": "sudo dnf install unzip"
+      }
+    },
+    {
+      "name": "ip",
+      "command": "ip",
+      "mode": "system",
+      "category": "Сеть",
+      "description": "Настройка и просмотр сетевых интерфейсов, адресов и маршрутов",
+      "args": [
+        "-c",
+        "address"
+      ],
+      "tags": [
+        "network",
+        "interface",
+        "address",
+        "route",
+        "ifconfig"
+      ],
+      "install": {
+        "arch": "sudo pacman -S iproute2",
+        "debian": "sudo apt install iproute2",
+        "fedora": "sudo dnf install iproute"
+      }
+    },
+    {
+      "name": "ss",
+      "command": "ss",
+      "mode": "system",
+      "category": "Сеть",
+      "description": "Список сокетов и сетевых соединений",
+      "args": [
+        "-tuln"
+      ],
+      "tags": [
+        "network",
+        "socket",
+        "port",
+        "connection",
+        "netstat"
+      ],
+      "install": {
+        "arch": "sudo pacman -S iproute2",
+        "debian": "sudo apt install iproute2",
+        "fedora": "sudo dnf install iproute"
+      }
+    },
+    {
+      "name": "ping",
+      "command": "ping",
+      "mode": "system",
+      "category": "Сеть",
+      "description": "Проверка доступности узла по ICMP",
+      "args": [
+        "-c",
+        "4",
+        "1.1.1.1"
+      ],
+      "tags": [
+        "network",
+        "icmp",
+        "latency",
+        "host"
+      ],
+      "install": {
+        "arch": "sudo pacman -S iputils",
+        "debian": "sudo apt install iputils-ping",
+        "fedora": "sudo dnf install iputils"
+      }
+    },
+    {
+      "name": "traceroute",
+      "command": "traceroute",
+      "mode": "system",
+      "category": "Сеть",
+      "description": "Маршрут пакетов до узла",
+      "args": [
+        "1.1.1.1"
+      ],
+      "tags": [
+        "network",
+        "route",
+        "hops",
+        "trace"
+      ],
+      "install": {
+        "arch": "sudo pacman -S traceroute",
+        "debian": "sudo apt install traceroute",
+        "fedora": "sudo dnf install traceroute"
+      }
+    },
+    {
+      "name": "dig",
+      "command": "dig",
+      "mode": "system",
+      "category": "Сеть",
+      "description": "DNS-запросы с подробным выводом",
+      "args": [
+        "example.com"
+      ],
+      "tags": [
+        "network",
+        "dns",
+        "lookup",
+        "domain"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bind",
+        "debian": "sudo apt install dnsutils",
+        "fedora": "sudo dnf install bind-utils"
+      }
+    },
+    {
+      "name": "nslookup",
+      "command": "nslookup",
+      "mode": "system",
+      "category": "Сеть",
+      "description": "Простые DNS-запросы",
+      "args": [
+        "example.com"
+      ],
+      "tags": [
+        "network",
+        "dns",
+        "lookup",
+        "domain"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bind",
+        "debian": "sudo apt install dnsutils",
+        "fedora": "sudo dnf install bind-utils"
+      }
+    },
+    {
+      "name": "curl",
+      "command": "curl",
+      "mode": "system",
+      "category": "Сеть",
+      "description": "Передача данных по URL: HTTP, FTP и другие протоколы",
+      "args": [
+        "-sI",
+        "https://example.com"
+      ],
+      "tags": [
+        "network",
+        "http",
+        "download",
+        "api",
+        "url"
+      ],
+      "install": {
+        "arch": "sudo pacman -S curl",
+        "debian": "sudo apt install curl",
+        "fedora": "sudo dnf install curl"
+      }
+    },
+    {
+      "name": "wget",
+      "command": "wget",
+      "mode": "system",
+      "category": "Сеть",
+      "description": "Загрузка файлов из сети",
+      "args": [
+        "--spider",
+        "https://example.com"
+      ],
+      "tags": [
+        "network",
+        "download",
+        "http",
+        "url"
+      ],
+      "install": {
+        "arch": "sudo pacman -S wget",
+        "debian": "sudo apt install wget",
+        "fedora": "sudo dnf install wget"
+      }
+    },
+    {
+      "name": "ssh",
+      "command": "ssh",
+      "mode": "system",
+      "category": "Сеть",
+      "description": "Защищённое подключение к удалённому серверу",
+      "notes": "Формат: пользователь@хост.",
+      "tags": [
+        "network",
+        "remote",
+        "shell",
+        "login",
+        "server"
+      ],
+      "install": {
+        "arch": "sudo pacman -S openssh",
+        "debian": "sudo apt install openssh-client",
+        "fedora": "sudo dnf install openssh-clients"
+      }
+    },
+    {
+      "name": "scp",
+      "command": "scp",
+      "mode": "system",
+      "category": "Сеть",
+      "description": "Копирование файлов по SSH",
+      "notes": "Формат: файл пользователь@хост:путь.",
+      "tags": [
+        "network",
+        "copy",
+        "remote",
+        "ssh",
+        "transfer"
+      ],
+      "install": {
+        "arch": "sudo pacman -S openssh",
+        "debian": "sudo apt install openssh-client",
+        "fedora": "sudo dnf install openssh-clients"
+      }
+    },
+    {
+      "name": "systemctl",
+      "command": "systemctl",
+      "mode": "system",
+      "category": "Службы и логи",
+      "description": "Управление службами и юнитами systemd",
+      "args": [
+        "list-units",
+        "--type=service",
+        "--state=running"
+      ],
+      "pause": false,
+      "notes": "Изменяющие действия (start, stop, enable) требуют прав root.",
+      "tags": [
+        "service",
+        "systemd",
+        "daemon",
+        "unit",
+        "log"
+      ],
+      "install": {
+        "arch": "sudo pacman -S systemd",
+        "debian": "sudo apt install systemd",
+        "fedora": "sudo dnf install systemd"
+      }
+    },
+    {
+      "name": "journalctl",
+      "command": "journalctl",
+      "mode": "system",
+      "category": "Службы и логи",
+      "description": "Просмотр системного журнала systemd",
+      "args": [
+        "-b",
+        "-e"
+      ],
+      "pause": false,
+      "tags": [
+        "log",
+        "logs",
+        "journal",
+        "systemd"
+      ],
+      "install": {
+        "arch": "sudo pacman -S systemd",
+        "debian": "sudo apt install systemd",
+        "fedora": "sudo dnf install systemd"
+      }
+    },
+    {
+      "name": "loginctl",
+      "command": "loginctl",
+      "mode": "system",
+      "category": "Службы и логи",
+      "description": "Управление сеансами и пользователями systemd-logind",
+      "args": [
+        "list-sessions"
+      ],
+      "tags": [
+        "session",
+        "login",
+        "user",
+        "seat"
+      ],
+      "install": {
+        "arch": "sudo pacman -S systemd",
+        "debian": "sudo apt install systemd",
+        "fedora": "sudo dnf install systemd"
+      }
+    },
+    {
+      "name": "env",
+      "command": "env",
+      "mode": "system",
+      "category": "Работа с окружением",
+      "description": "Вывод переменных окружения или запуск команды с изменённым окружением",
+      "tags": [
+        "environment",
+        "variables",
+        "env"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "printenv",
+      "command": "printenv",
+      "mode": "system",
+      "category": "Работа с окружением",
+      "description": "Вывод значений переменных окружения",
+      "args": [
+        "PATH"
+      ],
+      "tags": [
+        "environment",
+        "variables",
+        "print"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "export",
+      "command": "export",
+      "mode": "system",
+      "category": "Работа с окружением",
+      "description": "Экспорт переменных в окружение дочерних процессов",
+      "builtin": true,
+      "notes": "Встроенная команда оболочки: работает только внутри shell, поэтому Enter показывает справку help.",
+      "tags": [
+        "environment",
+        "variables",
+        "set"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bash",
+        "debian": "sudo apt install bash",
+        "fedora": "sudo dnf install bash"
+      }
+    },
+    {
+      "name": "alias",
+      "command": "alias",
+      "mode": "system",
+      "category": "Работа с окружением",
+      "description": "Создание и просмотр псевдонимов команд",
+      "builtin": true,
+      "notes": "Встроенная команда оболочки: работает только внутри shell, поэтому Enter показывает справку help.",
+      "tags": [
+        "alias",
+        "shortcut",
+        "command"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bash",
+        "debian": "sudo apt install bash",
+        "fedora": "sudo dnf install bash"
+      }
+    },
+    {
+      "name": "history",
+      "command": "history",
+      "mode": "system",
+      "category": "Работа с окружением",
+      "description": "История введённых команд оболочки",
+      "builtin": true,
+      "notes": "Встроенная команда оболочки: работает только внутри shell, поэтому Enter показывает справку help.",
+      "tags": [
+        "history",
+        "commands",
+        "shell"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bash",
+        "debian": "sudo apt install bash",
+        "fedora": "sudo dnf install bash"
+      }
+    },
+    {
+      "name": "clear",
+      "command": "clear",
+      "mode": "system",
+      "category": "Терминал",
+      "description": "Очистка экрана терминала",
+      "pause": false,
+      "prompt_args": false,
+      "tags": [
+        "terminal",
+        "screen",
+        "clear"
+      ],
+      "install": {
+        "arch": "sudo pacman -S ncurses",
+        "debian": "sudo apt install ncurses-bin",
+        "fedora": "sudo dnf install ncurses"
+      }
+    },
+    {
+      "name": "reset",
+      "command": "reset",
+      "mode": "system",
+      "category": "Терминал",
+      "description": "Сброс терминала в исходное состояние",
+      "pause": false,
+      "prompt_args": false,
+      "tags": [
+        "terminal",
+        "reset",
+        "fix"
+      ],
+      "install": {
+        "arch": "sudo pacman -S ncurses",
+        "debian": "sudo apt install ncurses-bin",
+        "fedora": "sudo dnf install ncurses"
+      }
+    },
+    {
+      "name": "tty",
+      "command": "tty",
+      "mode": "system",
+      "category": "Терминал",
+      "description": "Имя файла терминала, подключённого к вводу",
+      "prompt_args": false,
+      "tags": [
+        "terminal",
+        "device"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "stty",
+      "command": "stty",
+      "mode": "system",
+      "category": "Терминал",
+      "description": "Просмотр и изменение параметров терминала",
+      "args": [
+        "-a"
+      ],
+      "tags": [
+        "terminal",
+        "settings",
+        "tty"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    },
+    {
+      "name": "tput",
+      "command": "tput",
+      "mode": "system",
+      "category": "Терминал",
+      "description": "Запрос возможностей терминала через terminfo",
+      "args": [
+        "colors"
+      ],
+      "tags": [
+        "terminal",
+        "terminfo",
+        "capabilities"
+      ],
+      "install": {
+        "arch": "sudo pacman -S ncurses",
+        "debian": "sudo apt install ncurses-bin",
+        "fedora": "sudo dnf install ncurses"
+      }
+    },
+    {
+      "name": "watch",
+      "command": "watch",
+      "mode": "system",
+      "category": "Терминал",
+      "description": "Периодический запуск команды с выводом на весь экран",
+      "args": [
+        "-n",
+        "1",
+        "date"
+      ],
+      "pause": false,
+      "notes": "Выход — Ctrl+C.",
+      "tags": [
+        "repeat",
+        "monitor",
+        "interval"
+      ],
+      "install": {
+        "arch": "sudo pacman -S procps-ng",
+        "debian": "sudo apt install procps",
+        "fedora": "sudo dnf install procps-ng"
+      }
+    },
+    {
+      "name": "time",
+      "command": "time",
+      "mode": "system",
+      "category": "Терминал",
+      "description": "Измерение времени выполнения команды",
+      "args": [
+        "sleep",
+        "1"
+      ],
+      "notes": "Внешняя утилита /usr/bin/time; в bash также есть одноимённое ключевое слово.",
+      "tags": [
+        "measure",
+        "benchmark",
+        "duration"
+      ],
+      "install": {
+        "arch": "sudo pacman -S time",
+        "debian": "sudo apt install time",
+        "fedora": "sudo dnf install time"
+      }
+    },
+    {
+      "name": "timeout",
+      "command": "timeout",
+      "mode": "system",
+      "category": "Терминал",
+      "description": "Запуск команды с ограничением по времени",
+      "args": [
+        "2",
+        "sleep",
+        "5"
+      ],
+      "tags": [
+        "time",
+        "limit",
+        "kill"
+      ],
+      "install": {
+        "arch": "sudo pacman -S coreutils",
+        "debian": "sudo apt install coreutils",
+        "fedora": "sudo dnf install coreutils"
+      }
+    }
+  ]
+}
