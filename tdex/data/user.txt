@@ -1,0 +1,100 @@
+[Мониторинг]
+btop
+htop
+atop
+bottom
+nvtop
+[Информация о системе]
+fastfetch
+macchina
+inxi
+hwinfo
+[Файловые менеджеры]
+mc
+ranger
+nnn
+yazi
+lf
+[Текстовые редакторы]
+vim
+neovim
+nano
+micro
+emacs
+[Поиск и навигация]
+fzf
+broot
+zoxide
+[Работа с файлами]
+bat
+eza
+tree
+dust
+duf
+[Музыка]
+cmus
+moc
+musikcube
+cava
+cli-visualizer
+[Видео и изображения]
+mpv
+viu
+chafa
+ffmpeg
+[Git]
+lazygit
+tig
+gitui
+gh
+[Docker и контейнеры]
+lazydocker
+docker
+podman
+dive
+[Сеть]
+nmap
+bandwhich
+iftop
+nload
+bmon
+[Терминальные браузеры]
+lynx
+w3m
+links
+browsh
+[Базы данных]
+sqlite3
+psql
+mycli
+litecli
+[Логи]
+lnav
+multitail
+[Терминальные мультиплексоры]
+tmux
+screen
+zellij
+[Органайзеры]
+taskwarrior
+calcurse
+khal
+[Пароли и шифрование]
+pass
+gopass
+age
+gpg
+[Консольные игры]
+nethack
+moon-buggy
+bastet
+nsnake
+nudoku
+2048
+[Развлечения / ASCII]
+cmatrix
+sl
+cowsay
+fortune
+lolcat
+toilet

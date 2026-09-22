@@ -146,6 +146,10 @@ Keys in `install` are free-form; known labels are `arch`, `aur`, `debian`, `fedo
 `/etc/os-release`) is highlighted. Install commands are indicative — package names may differ
 between distribution releases.
 
+[`tdex/data/user.txt`](tdex/data/user.txt) and [`tdex/data/system.txt`](tdex/data/system.txt)
+are plain lists of the same catalog (`[Category]` followed by one program per line);
+the program does not read them, and a unit test checks that they match `catalog.json`.
+
 `python3 -m tdex --check` validates the files and reports errors with the entry number.
 
 ## Project layout

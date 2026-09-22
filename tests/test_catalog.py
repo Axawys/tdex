@@ -106,6 +106,21 @@ class BuiltinCatalogTest(unittest.TestCase):
             self.assertIn(key, names)
 
 
+class PlainListsTest(unittest.TestCase):
+    """data/user.txt и data/system.txt должны совпадать с catalog.json."""
+
+    def test_lists_match_catalog(self):
+        catalog = Catalog.load([builtin_catalog_path()])
+        for mode in MODES:
+            expected = []
+            for category in catalog.categories(mode):
+                expected.append(f"[{category}]")
+                expected.extend(t.name for t in catalog.tools_in(mode, category))
+            path = builtin_catalog_path().with_name(f"{mode}.txt")
+            with self.subTest(mode=mode):
+                self.assertEqual(path.read_text(encoding="utf-8").splitlines(), expected)
+
+
 class SearchTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
