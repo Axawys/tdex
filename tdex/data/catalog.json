@@ -1541,8 +1541,405 @@
         "2048"
       ],
       "install": {
-        "aur": "yay -S 2048-cli",
+        "aur": "yay -S 2048-cli-git",
         "other": "Сборка из исходников: https://github.com/tiehuis/2048-cli"
+      }
+    },
+    {
+      "name": "adventure",
+      "command": "adventure",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Colossal Cave Adventure — классический текстовый квест 1976 года",
+      "aliases": [
+        "bsdgames-adventure"
+      ],
+      "tags": [
+        "game",
+        "adventure",
+        "text",
+        "quest",
+        "classic",
+        "bsd"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bsd-games",
+        "debian": "sudo apt install bsdgames",
+        "fedora": "sudo dnf install bsd-games"
+      }
+    },
+    {
+      "name": "atc",
+      "command": "atc",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Диспетчер воздушного движения: проводите самолёты без столкновений",
+      "tags": [
+        "game",
+        "air",
+        "traffic",
+        "control",
+        "strategy",
+        "bsd"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bsd-games",
+        "debian": "sudo apt install bsdgames",
+        "fedora": "sudo dnf install bsd-games"
+      }
+    },
+    {
+      "name": "robots",
+      "command": "robots",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Уходите от роботов, заставляя их сталкиваться друг с другом",
+      "tags": [
+        "game",
+        "robots",
+        "arcade",
+        "strategy",
+        "bsd"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bsd-games",
+        "debian": "sudo apt install bsdgames",
+        "fedora": "sudo dnf install bsd-games"
+      }
+    },
+    {
+      "name": "worm",
+      "command": "worm",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Червяк, растущий от съеденных цифр, — предок «Змейки»",
+      "tags": [
+        "game",
+        "worm",
+        "snake",
+        "arcade",
+        "bsd"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bsd-games",
+        "debian": "sudo apt install bsdgames",
+        "fedora": "sudo dnf install bsd-games"
+      }
+    },
+    {
+      "name": "wump",
+      "command": "wump",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Hunt the Wumpus — охота на вампуса в системе пещер",
+      "tags": [
+        "game",
+        "wumpus",
+        "hunt",
+        "cave",
+        "classic",
+        "bsd"
+      ],
+      "install": {
+        "arch": "sudo pacman -S bsd-games",
+        "debian": "sudo apt install bsdgames",
+        "fedora": "sudo dnf install bsd-games"
+      }
+    },
+    {
+      "name": "ninvaders",
+      "command": "ninvaders",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Клон Space Invaders на ncurses",
+      "tags": [
+        "game",
+        "space",
+        "invaders",
+        "arcade",
+        "shooter"
+      ],
+      "install": {
+        "aur": "yay -S ninvaders",
+        "debian": "sudo apt install ninvaders"
+      }
+    },
+    {
+      "name": "pacman4console",
+      "command": "pacman4console",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Pac-Man в терминале",
+      "tags": [
+        "game",
+        "pacman",
+        "arcade",
+        "maze"
+      ],
+      "install": {
+        "aur": "yay -S pacman4console",
+        "debian": "sudo apt install pacman4console"
+      }
+    },
+    {
+      "name": "greed",
+      "command": "greed",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Съешьте как можно больше поля, двигаясь на число клеток под курсором",
+      "tags": [
+        "game",
+        "puzzle",
+        "numbers",
+        "strategy"
+      ],
+      "install": {
+        "aur": "yay -S greed",
+        "debian": "sudo apt install greed"
+      }
+    },
+    {
+      "name": "freesweep",
+      "command": "freesweep",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "«Сапёр» в терминале",
+      "tags": [
+        "game",
+        "minesweeper",
+        "mines",
+        "puzzle"
+      ],
+      "install": {
+        "aur": "yay -S freesweep",
+        "debian": "sudo apt install freesweep"
+      }
+    },
+    {
+      "name": "tint",
+      "command": "tint",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "TINT Is Not Tetris — тетрис на ncurses",
+      "tags": [
+        "game",
+        "tetris",
+        "puzzle",
+        "blocks"
+      ],
+      "install": {
+        "aur": "yay -S tint",
+        "debian": "sudo apt install tint"
+      }
+    },
+    {
+      "name": "vitetris",
+      "command": "vitetris",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Тетрис с таблицей рекордов и игрой вдвоём",
+      "aliases": [
+        "tetris"
+      ],
+      "tags": [
+        "game",
+        "tetris",
+        "puzzle",
+        "blocks",
+        "multiplayer"
+      ],
+      "install": {
+        "aur": "yay -S vitetris",
+        "debian": "sudo apt install vitetris"
+      }
+    },
+    {
+      "name": "angband",
+      "command": "angband",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Roguelike по мотивам Толкина: спуститесь на 100-й уровень и победите Моргота",
+      "tags": [
+        "game",
+        "roguelike",
+        "dungeon",
+        "rpg",
+        "tolkien"
+      ],
+      "install": {
+        "arch": "sudo pacman -S angband",
+        "debian": "sudo apt install angband",
+        "fedora": "sudo dnf install angband"
+      }
+    },
+    {
+      "name": "crawl",
+      "command": "crawl",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Dungeon Crawl Stone Soup — одна из самых популярных roguelike-игр",
+      "tags": [
+        "game",
+        "roguelike",
+        "dungeon",
+        "rpg",
+        "dcss"
+      ],
+      "install": {
+        "aur": "yay -S crawl",
+        "debian": "sudo apt install crawl",
+        "fedora": "sudo dnf install crawl"
+      }
+    },
+    {
+      "name": "cataclysm-dda",
+      "command": "cataclysm",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Cataclysm: Dark Days Ahead — постапокалиптический roguelike про выживание",
+      "tags": [
+        "game",
+        "roguelike",
+        "survival",
+        "zombie",
+        "rpg"
+      ],
+      "install": {
+        "arch": "sudo pacman -S cataclysm-dda",
+        "debian": "sudo apt install cataclysm-dda-curses",
+        "fedora": "sudo dnf install cataclysm-dda"
+      }
+    },
+    {
+      "name": "frotz",
+      "command": "frotz",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Интерпретатор текстовых квестов Z-machine: Zork и тысячи других игр",
+      "pause": true,
+      "prompt_args": true,
+      "notes": "Укажите файл игры (.z3, .z5, .z8). Бесплатные игры: https://ifdb.org",
+      "tags": [
+        "game",
+        "interactive",
+        "fiction",
+        "text",
+        "adventure",
+        "zork"
+      ],
+      "install": {
+        "arch": "sudo pacman -S frotz-ncurses",
+        "debian": "sudo apt install frotz",
+        "fedora": "sudo dnf install frotz"
+      }
+    },
+    {
+      "name": "gnuchess",
+      "command": "gnuchess",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Шахматный движок GNU Chess с текстовым интерфейсом",
+      "notes": "Ходы вводятся в нотации e2e4; выход — quit.",
+      "tags": [
+        "game",
+        "chess",
+        "board",
+        "strategy"
+      ],
+      "install": {
+        "arch": "sudo pacman -S gnuchess",
+        "debian": "sudo apt install gnuchess",
+        "fedora": "sudo dnf install gnuchess"
+      }
+    },
+    {
+      "name": "curseofwar",
+      "command": "curseofwar",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Стратегия в реальном времени: захватывайте территории и города",
+      "tags": [
+        "game",
+        "strategy",
+        "rts",
+        "war"
+      ],
+      "install": {
+        "aur": "yay -S curseofwar",
+        "debian": "sudo apt install curseofwar"
+      }
+    },
+    {
+      "name": "robotfindskitten",
+      "command": "robotfindskitten",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Дзен-симулятор: робот ищет котёнка среди загадочных предметов",
+      "tags": [
+        "game",
+        "robot",
+        "kitten",
+        "zen",
+        "fun"
+      ],
+      "install": {
+        "arch": "sudo pacman -S robotfindskitten",
+        "debian": "sudo apt install robotfindskitten",
+        "fedora": "sudo dnf install robotfindskitten"
+      }
+    },
+    {
+      "name": "typespeed",
+      "command": "typespeed",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Игра на скорость печати: успейте набрать слова, пока они не пересекли экран",
+      "tags": [
+        "game",
+        "typing",
+        "keyboard",
+        "speed"
+      ],
+      "install": {
+        "aur": "yay -S typespeed",
+        "debian": "sudo apt install typespeed",
+        "fedora": "sudo dnf install typespeed"
+      }
+    },
+    {
+      "name": "gtypist",
+      "command": "gtypist",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "GNU Typist — клавиатурный тренажёр с уроками слепой печати",
+      "tags": [
+        "typing",
+        "tutor",
+        "keyboard",
+        "learn"
+      ],
+      "install": {
+        "aur": "yay -S gtypist",
+        "debian": "sudo apt install gtypist",
+        "fedora": "sudo dnf install gtypist"
+      }
+    },
+    {
+      "name": "ttyper",
+      "command": "ttyper",
+      "mode": "user",
+      "category": "Консольные игры",
+      "description": "Тест скорости печати в терминале с подсчётом WPM и точности",
+      "tags": [
+        "game",
+        "typing",
+        "keyboard",
+        "speed",
+        "wpm"
+      ],
+      "install": {
+        "arch": "sudo pacman -S ttyper",
+        "cargo": "cargo install ttyper"
       }
     },
     {
@@ -1675,6 +2072,297 @@
         "arch": "sudo pacman -S toilet",
         "debian": "sudo apt install toilet",
         "fedora": "sudo dnf install toilet"
+      }
+    },
+    {
+      "name": "asciiquarium",
+      "command": "asciiquarium",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Аквариум с рыбами, акулами и водорослями из ASCII-символов",
+      "notes": "Выход — q.",
+      "tags": [
+        "fun",
+        "aquarium",
+        "fish",
+        "ascii",
+        "animation",
+        "screensaver"
+      ],
+      "install": {
+        "arch": "sudo pacman -S asciiquarium",
+        "fedora": "sudo dnf install asciiquarium"
+      }
+    },
+    {
+      "name": "cbonsai",
+      "command": "cbonsai",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Выращивает бонсай из символов прямо в терминале",
+      "args": [
+        "-l"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "notes": "-l — анимация роста, -i — бесконечный режим, -S — заставка.",
+      "tags": [
+        "fun",
+        "bonsai",
+        "tree",
+        "ascii",
+        "animation"
+      ],
+      "install": {
+        "aur": "yay -S cbonsai",
+        "debian": "sudo apt install cbonsai",
+        "fedora": "sudo dnf install cbonsai"
+      }
+    },
+    {
+      "name": "pipes.sh",
+      "command": "pipes.sh",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Заставка с бесконечно растущими цветными трубами",
+      "aliases": [
+        "pipes"
+      ],
+      "notes": "Выход — q или Ctrl+C.",
+      "tags": [
+        "fun",
+        "pipes",
+        "screensaver",
+        "animation"
+      ],
+      "install": {
+        "aur": "yay -S pipes.sh",
+        "debian": "sudo apt install pipes-sh"
+      }
+    },
+    {
+      "name": "neo",
+      "command": "neo",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Современный «цифровой дождь» из «Матрицы» с Unicode и 24-битным цветом",
+      "notes": "Выход — q или Ctrl+C.",
+      "tags": [
+        "fun",
+        "matrix",
+        "screensaver",
+        "animation",
+        "cmatrix"
+      ],
+      "install": {
+        "aur": "yay -S neo-matrix",
+        "debian": "sudo apt install neo",
+        "fedora": "sudo dnf install neo"
+      }
+    },
+    {
+      "name": "nyancat",
+      "command": "nyancat",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Nyan Cat, летящий по терминалу под радугой",
+      "notes": "Выход — Ctrl+C.",
+      "tags": [
+        "fun",
+        "cat",
+        "nyan",
+        "animation",
+        "rainbow"
+      ],
+      "install": {
+        "arch": "sudo pacman -S nyancat",
+        "debian": "sudo apt install nyancat",
+        "fedora": "sudo dnf install nyancat"
+      }
+    },
+    {
+      "name": "tty-clock",
+      "command": "tty-clock",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Большие цифровые часы в терминале",
+      "args": [
+        "-c",
+        "-s"
+      ],
+      "notes": "Выход — q. -c — по центру, -s — с секундами.",
+      "tags": [
+        "fun",
+        "clock",
+        "time",
+        "screensaver"
+      ],
+      "install": {
+        "aur": "yay -S tty-clock",
+        "debian": "sudo apt install tty-clock"
+      }
+    },
+    {
+      "name": "lavat",
+      "command": "lavat",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Лавовая лампа в терминале",
+      "notes": "Выход — q или Ctrl+C.",
+      "tags": [
+        "fun",
+        "lava",
+        "lamp",
+        "screensaver",
+        "animation"
+      ],
+      "install": {
+        "aur": "yay -S lavat",
+        "other": "Сборка из исходников: https://github.com/AngelJumbo/lavat"
+      }
+    },
+    {
+      "name": "gti",
+      "command": "gti",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Машина, проезжающая по экрану, если опечататься в git",
+      "tags": [
+        "fun",
+        "git",
+        "car",
+        "typo",
+        "animation",
+        "joke"
+      ],
+      "install": {
+        "aur": "yay -S gti",
+        "fedora": "sudo dnf install gti"
+      }
+    },
+    {
+      "name": "hollywood",
+      "command": "hollywood",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "«Хакерский» терминал как в кино: много панелей с бегущим выводом",
+      "notes": "Требует tmux. Выход — Ctrl+C.",
+      "tags": [
+        "fun",
+        "hacker",
+        "movie",
+        "tmux",
+        "screensaver"
+      ],
+      "install": {
+        "aur": "yay -S hollywood",
+        "debian": "sudo apt install hollywood"
+      }
+    },
+    {
+      "name": "genact",
+      "command": "genact",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Генератор бурной деятельности: имитирует компиляцию, загрузки и деплой",
+      "notes": "Выход — Ctrl+C.",
+      "tags": [
+        "fun",
+        "fake",
+        "activity",
+        "hacker",
+        "joke"
+      ],
+      "install": {
+        "arch": "sudo pacman -S genact",
+        "cargo": "cargo install genact"
+      }
+    },
+    {
+      "name": "bb",
+      "command": "bb",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Демонстрация ASCII-графики и музыки библиотеки AAlib",
+      "tags": [
+        "fun",
+        "demo",
+        "ascii",
+        "aalib",
+        "animation"
+      ],
+      "install": {
+        "aur": "yay -S bb",
+        "debian": "sudo apt install bb"
+      }
+    },
+    {
+      "name": "figlet",
+      "command": "figlet",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Крупные надписи из ASCII-символов разными шрифтами",
+      "args": [
+        "tdex"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "fun",
+        "banner",
+        "ascii",
+        "text",
+        "art",
+        "font"
+      ],
+      "install": {
+        "arch": "sudo pacman -S figlet",
+        "debian": "sudo apt install figlet",
+        "fedora": "sudo dnf install figlet"
+      }
+    },
+    {
+      "name": "ponysay",
+      "command": "ponysay",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Пони из My Little Pony, произносящие заданный текст — cowsay с пони",
+      "args": [
+        "Привет из tdex!"
+      ],
+      "pause": true,
+      "prompt_args": true,
+      "tags": [
+        "fun",
+        "pony",
+        "cowsay",
+        "ascii",
+        "text",
+        "say"
+      ],
+      "install": {
+        "arch": "sudo pacman -S ponysay"
+      }
+    },
+    {
+      "name": "jp2a",
+      "command": "jp2a",
+      "mode": "user",
+      "category": "Развлечения / ASCII",
+      "description": "Преобразование JPEG и PNG в ASCII-арт",
+      "pause": true,
+      "prompt_args": true,
+      "notes": "Укажите путь к изображению; --colors — цветной вывод.",
+      "tags": [
+        "fun",
+        "image",
+        "ascii",
+        "art",
+        "convert"
+      ],
+      "install": {
+        "arch": "sudo pacman -S jp2a",
+        "debian": "sudo apt install jp2a"
       }
     },
     {

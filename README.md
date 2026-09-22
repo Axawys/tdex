@@ -27,7 +27,7 @@ install commands for Arch, Debian/Ubuntu and Fedora — **it never installs anyt
 The catalog has two modes, switched with `Tab`:
 
 - **USER** — full-featured console/TUI applications: monitoring, file managers, editors,
-  git, containers, network, browsers, databases, multiplexers, games and more (81 programs).
+  git, containers, network, browsers, databases, multiplexers, games and more (116 programs).
 - **SYSTEM** — standard CLI utilities: file system, text processing, processes, disks,
   permissions, archives, network, systemd, environment, terminal (91 utilities).
 
